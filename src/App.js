@@ -14,9 +14,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />} >
           <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="https://docs.google.com/document/d/1iu6SipaWV5FiS2YmdkgSXqbMYMxa0MGpDZ2gzbY3lJI/edit?usp=sharing" />
+
           <Route path="/dashboard" element={<Dashboard />} />
         </Route>
       </Routes>

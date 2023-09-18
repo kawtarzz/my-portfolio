@@ -6,12 +6,13 @@ import {
   faGithub,
 } from '@fortawesome/free-brands-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
+import { Nav } from 'react-bootstrap'
 
 const Sidebar = () => {
   const [showNav, setShowNav] = useState(false);
 
   return (
-    <div className="nav-bar">
+    <Nav className="nav-bar">
       <Link
         className="logo"
         to="/"
@@ -44,6 +45,14 @@ const Sidebar = () => {
         </NavLink>
         <NavLink
           activeclassname="active"
+          className="resume-link"
+          target="_blank"
+          to="https://docs.google.com/document/d/1iu6SipaWV5FiS2YmdkgSXqbMYMxa0MGpDZ2gzbY3lJI/edit?usp=sharing"
+          onClick={() => setShowNav(false)}>
+          Resume
+        </NavLink>
+        <NavLink
+          activeclassname="active"
           className="contact-link"
           to="/contact"
           onClick={() => setShowNav(false)}
@@ -60,8 +69,9 @@ const Sidebar = () => {
           >
             <FontAwesomeIcon
               icon={faLinkedin}
-              color="#4d4d4e"
+              color="#ffffff"
               className="anchor-icon"
+              style={{ fontSize: '1.7rem' }}
             />
           </a>
         </li>
@@ -73,15 +83,16 @@ const Sidebar = () => {
           >
             <FontAwesomeIcon
               icon={faGithub}
-              color="#4d4d4e"
+              color='#ffffff'
               className="anchor-icon"
+              style={{ fontSize: '1.7rem' }}
             />
           </a>
         </li>
 
       </ul>
 
-    </div>
+    </Nav>
   )
 }
 

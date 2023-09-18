@@ -19,7 +19,9 @@ const Home = () => {
 
   useEffect(() => {
     animate()
-  })
+  }, [])
+
+
 
   return (
     <>

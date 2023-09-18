@@ -1,6 +1,7 @@
 import './index.scss';
 import Sidebar from '../Sidebar';
 import { Outlet } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 
 
 const Layout = () => {
@@ -8,9 +9,9 @@ const Layout = () => {
     <div className="App">
 
       <Sidebar />
-      <div className='page'>
+      <Container fluid className="p-0">
         <Outlet />
-      </div>
+      </Container>
     </div>
   </>
 }
