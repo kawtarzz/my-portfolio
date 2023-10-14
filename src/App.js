@@ -17,7 +17,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="https://docs.google.com/document/d/1iu6SipaWV5FiS2YmdkgSXqbMYMxa0MGpDZ2gzbY3lJI/edit?usp=sharing" />
+          <Route path="https://1drv.ms/b/s!Ag3Zv8QvALDegtFB6qF_jSZAI4imRg?e=XquTKE" />
 
           <Route path="/dashboard" element={<Dashboard />} />
         </Route>
