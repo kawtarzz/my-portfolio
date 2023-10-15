@@ -10,7 +10,7 @@ const Contact = () => {
   const form = useRef()
 
   useEffect(() => {
-    return setTimeout(() => {
+    setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
   }, [])
@@ -18,6 +18,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault()
 
+    // add token for emailjs
     emailjs
       .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
       .then(
@@ -26,7 +27,7 @@ const Contact = () => {
           window.location.reload(false)
         },
         () => {
-          alert('Failed to send the message, please try again')
+          alert('Failed to send the message, please try again or contact me at Kawtaryazzouzi@gmail.com')
         }
       )
   }
@@ -42,9 +43,9 @@ const Contact = () => {
               idx={15}
             />
           </h1>
-          <p>
-            I am seeking full-time opportunities for full-stack development at a company where I can grow and build upon these skills. I am also open to freelance work.
+          <p className='textarea'>
           </p>
+
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
               <ul>
@@ -70,6 +71,7 @@ const Contact = () => {
                 <li>
                   <textarea
                     placeholder="Message"
+                    type="text"
                     name="message"
                     required
                   ></textarea>

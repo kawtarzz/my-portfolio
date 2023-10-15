@@ -9,7 +9,7 @@ body {
   list-style: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #4462b4;
+  background: #96c9ff;
   overflow: hidden;
   display: block;
 }
@@ -19,7 +19,7 @@ body {
   margin-left: 100px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
   body {
     overflow: visible;
   }

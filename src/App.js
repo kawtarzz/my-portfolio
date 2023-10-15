@@ -5,24 +5,24 @@ import Contact from './components/Contact'
 import Layout from './components/Layout'
 import Portfolio from './components/Portfolio'
 import Dashboard from './components/Dashboard'
+import Resume from './components/Resume'
 import './App.scss'
 
 
 function App() {
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Layout />} >
-          <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="https://1drv.ms/b/s!Ag3Zv8QvALDegtFB6qF_jSZAI4imRg?e=XquTKE" />
+    <Routes>
+      <Route path="/" element={<Layout />} >
+        <Route index element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/resume" element={<Resume />} />
 
-          <Route path="/dashboard" element={<Dashboard />} />
-        </Route>
-      </Routes>
-    </>
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Route>
+    </Routes>
+
   );
 }
 

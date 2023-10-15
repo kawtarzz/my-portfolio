@@ -46,8 +46,7 @@ const Sidebar = () => {
         <NavLink
           activeclassname="active"
           className="resume-link"
-          target="_blank"
-          to="https://docs.google.com/document/d/1iu6SipaWV5FiS2YmdkgSXqbMYMxa0MGpDZ2gzbY3lJI/edit?usp=sharing"
+          to="/resume"
           onClick={() => setShowNav(false)}>
           Resume
         </NavLink>

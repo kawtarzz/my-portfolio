@@ -33,23 +33,28 @@ const Home = () => {
             <span className={`${letterClass} _12`} >I</span>
             <span className={`${letterClass} _14`} >'m</span>
 
+
+
             <img
               src={""}
               alt=""
             />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={nameArray}
-              idx={10}
-            />
+            <span className={`${letterClass} _14`} >Kawtar</span>
+
+
             <br />
+            <span className={`${letterClass} _15`} >a</span>
+            <span className={`${letterClass} _16`} > </span>
+
             <AnimatedLetters
               letterClass={letterClass}
               strArray={jobArray}
-              idx={22}
+              idx={16}
             />
           </h1>
-          <h2>Full-stack Developer & Designer</h2>
+          <span className={`${letterClass} _15`} > </span>
+          <span className={`${letterClass} _16`} > </span>
+          <h4>passionate web developer and designer seeking full-time opportunities! </h4>
           <Link to="/contact"
             className="flat-button">
             <span>Get in touch</span>
