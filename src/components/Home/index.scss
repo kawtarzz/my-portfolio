@@ -1,18 +1,30 @@
+.container.home-page {
+  display: block;
+  width: auto;
+  height: auto;
+  opacity: 0;
+  margin: auto;
+  padding: 5%;
+  float: left;
+  transform: translateY(-50%);
+  z-index: 0;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
+
 .home-page {
   .text-zone {
-    position: absolute;
-    top: 55%;
-    left: 15%;
-    transform: translateY(-90%);
-    width: 50%;
-    max-height: 90%;
+    width: 100%;
+    height: auto;
   }
 
   h1 {
     color: #fff;
-    font-size: 56px;
+    font-size: 48px;
     line-height: 40px;
-    margin: 5;
+    padding-top: 45rem;
+    letter-spacing: 1px;
     font-family: 'Coolvetica';
     font-weight: 300;
 
@@ -20,9 +32,11 @@
       content: '<h1>';
       font-family: 'La Belle Aurore', cursive;
       color: #ffd700;
-      font-size: 18px;
-      position: absolute;
-      margin-top: -40px;
+      font-size: 25px;
+      line-height: 25px;
+      position: relative;
+      padding: -20px;
+      margin-top: -30px;
       left: -15px;
       opacity: 0.6;
     }
@@ -31,10 +45,10 @@
       content: '<h1/>';
       font-family: 'La Belle Aurore', cursive;
       color: #ffd700;
-      font-size: 18px;
+      font-size: 25px;
       position: absolute;
       margin-top: 18px;
-      margin-left: 20px;
+      margin-left: 25px;
       animation: fadeIn 1s 1.7s backwards;
       opacity: 0.6;
     }
@@ -51,17 +65,17 @@
 
   h2 {
     color: #0c173b;
-    margin-top: 10px;
+    margin-top: 1%;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     font-family: sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1.3s 1.8s backwards;
   }
 
   h4 {
-    color: #0c173b;
-    max-width: 70%;
+    color: #06006f;
+    max-width: 80%;
     font-weight: 700;
     font-size: 16px;
     font-family: sans-serif;
@@ -69,15 +83,15 @@
   }
 
   .flat-button {
-    color: #ffcc14;
-    font-size: 14px;
+    color: #ffffff;
+    font-size: 16px;
     font-weight: 550;
     text-align: center;
     letter-spacing: 1px;
     font-family: sans-serif;
     text-decoration: solid;
     padding: 10px 10px;
-    border: 2px solid #ffcc14;
+    border: 2px solid #ffffff;
     margin: 0rem 0 0 0;
     float: left;
     animation: fadeInAnimation 1s 1.8s backwards;
@@ -85,27 +99,26 @@
 
     &:hover {
       background: #ffcc14;
-      color: #0c173b;
+      color: #000822;
     }
   }
 }
-
-
 
 @media screen and (max-width: 1200px) {
 
   .tags,
   .home-page h1:before,
   .home-page h1:after {
-    display: inline-flex;
+    display: inline-block;
+    padding-top: auto;
   }
 
   .home-page .text-zone {
-    position: relative;
-    width: 100%;
-    transform: none;
-    padding: 20px;
-    box-sizing: border-box;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-height: 90%;
   }
 
   .home-page .flat-button {

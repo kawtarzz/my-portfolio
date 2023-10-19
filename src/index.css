@@ -1,25 +1,30 @@
 html {
-  font-size: 62.5%;
+  font-size: 70.5%;
 }
 
 body {
+  background-color: #769aff;
+  height: 50%;
   margin: 0;
   font: 300 11px/1.4 'Helvetica Neue', sans-serif;
-  color: #13163f;
+  color: #010543;
   list-style: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #96c9ff;
   overflow: hidden;
   display: block;
+  justify-content: flex-start;
+  margin-right: 0;
+  padding-right: 0;
 }
 
 .dashboard {
-  margin-top: 100px;
-  margin-left: 100px;
+  margin-top: 3%;
+  margin-left: 3%;
+
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   body {
     overflow: visible;
   }

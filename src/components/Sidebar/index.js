@@ -5,93 +5,58 @@ import {
   faLinkedin,
   faGithub,
 } from '@fortawesome/free-brands-svg-icons'
-import { Link, NavLink } from 'react-router-dom'
-import { Nav } from 'react-bootstrap'
+import Logo from '../../assets/logo.svg'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavbarBrand from 'react-bootstrap/NavbarBrand'
+import { NavLink } from 'react-router-dom'
+
 
 const Sidebar = () => {
-  const [showNav, setShowNav] = useState(false);
-
   return (
-    <Nav className="nav-bar">
-      <Link
-        className="logo"
-        to="/"
-        onClick={() => setShowNav(false)}>
-        <img src={"logo"} alt="Logo" />
+    <Navbar bg="primary" data-bs-theme="dark">
+      <div className="nav-bar">
+        <Navbar.Brand href="/">
+          <img
+            src={Logo}
+            className="logo"
+            alt="Web Developer Kawtar Azzouzi Logo"
 
-      </Link>
-      <nav className={showNav ? 'mobile-show' : ''}>
+          />{' '}
+        </Navbar.Brand>
         <NavLink
-          exact="true"
-          activeclassname="active"
-          to="/"
-          onClick={() => setShowNav(false)}>
-          Home
-        </NavLink>
-        <NavLink
-          activeclassname="active"
-          className="about-link"
-          to="/about"
-          onClick={() => setShowNav(false)}>
-          About
-        </NavLink>
-        <NavLink
-          activeclassname="active"
           className="portfolio-link"
           to="/portfolio"
-          onClick={() => setShowNav(false)}
-        >
-          Portfolio
+        >Portfolio</NavLink>
+        <NavLink
+          className="resume-link" to="/resume">Resume</NavLink>
+        <NavLink className="contact-link" to="/contact">Contact</NavLink>
+
+        <NavLink
+          className="linkedin-link"
+          to="https://www.linkedin.com/in/kawtara"
+          target="_blank"
+          rel="noreferrer">
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            color="#ffffff"
+            className="anchor-icon"
+          />
         </NavLink>
         <NavLink
-          activeclassname="active"
-          className="resume-link"
-          to="/resume"
-          onClick={() => setShowNav(false)}>
-          Resume
+          className="linkedin-link"
+          to="http://www.github.com/kawtarzz"
+          target="_blank"
+          rel="noreferrer">
+          <FontAwesomeIcon
+            icon={faGithub}
+            color="#ffffff"
+            className="anchor-icon"
+          />
         </NavLink>
-        <NavLink
-          activeclassname="active"
-          className="contact-link"
-          to="/contact"
-          onClick={() => setShowNav(false)}
-        >
-          Contact
-        </NavLink>
-      </nav>
-      <ul>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/kawtara"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              color="#ffffff"
-              className="anchor-icon"
-              style={{ fontSize: '1.7rem' }}
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/kawtarzz"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faGithub}
-              color='#ffffff'
-              className="anchor-icon"
-              style={{ fontSize: '1.7rem' }}
-            />
-          </a>
-        </li>
-
-      </ul>
-
-    </Nav>
+      </div>
+    </Navbar >
   )
 }
 

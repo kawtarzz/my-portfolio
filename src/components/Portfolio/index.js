@@ -1,49 +1,49 @@
-import { Gallery } from "react-grid-gallery";
 import React from "react";
-import "./index.scss";
-
-const Portfolio = () => {
-  const [loading, setLoading] = React.useState(true);
+import { projects } from "./Projects/data.js"
+import "./index.scss"
 
 
-  const images = [
-    {
-      id: 1,
-      src: "https://onedrive.live.com/embed?resid=DEB0002FC4BFD90D%2143153&authkey=%21ABFbfQeiCHjn25k&width=800",
-      caption: "Shop the Block- Full-Stack E-commerce Application",
-      tags: [
-        { value: "React", title: "Shop the Block - Full-Stack Server-Side Capstone" },
-        { value: ".NET Stack", title: "Web API" },
-        { value: "C#", title: "Back-End" },
-        { value: "SQL", title: "Database" },
-      ],
-      alt: "Productivity Tracking Application",
-    },
-    {
-      id: 2,
-      src: "https://onedrive.live.com/embed?resid=DEB0002FC4BFD90D%2143204&authkey=%21APdNUoPA0qrtGQc&width=660",
-      caption: "CookiJar- Productivity Tracking Application",
-      tags: [
-        { value: "Front-End", title: "CookiJar" },
-        { value: "React", title: "Client" },
-        { value: "Bootstrap", title: "Styling" },
-        { value: "JSON REST API", title: "Server" },
-      ],
-      alt: "Productivity Tracking Application",
-    }
-  ];
-
+function Portfolio() {
   return (
     <div className="portfolio-page">
-      {
-        images.map((image) => {
-          return (
-            <Gallery key={image.id} images={images} className="images-container" />
-          )
-        })
-      }
+      <section id="projects" className="text-gray-400 bg-gray-900 body-font">
+        <div>
+          <h1 className="page-title">
+            Portfolio
+          </h1>
+          <h3>
+            Below you'll find a selection of my favorite projects & experiences.
+          </h3>
+        </div>
+        <div className="flex flex-wrap -m-4">
+          {projects.map((project) => (
+            <a
+              href={project.link}
+              key={project.image}
+              className="sm:w-1/2 w-100 p-4">
+              <div className="images-container">
+                <img
+                  alt="gallery"
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  src={project.image}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h1 className="title-font text-lg font-medium text-white mb-3">
+                    {project.title}
+
+                  </h1>
+                  <h2 className="tracking-widest text-sm title-font font-medium text-green-500 mb-1">
+                    {project.subtitle}
+                  </h2>
+                  <h4>{project.description}</h4>
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
     </div>
-  )
+  );
 }
 
 export default Portfolio;

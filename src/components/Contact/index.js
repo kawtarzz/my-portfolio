@@ -83,16 +83,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="info-map">
-          Nashville,
-          <br />
-          Tennessee
-          <br />
-          37211 <br />
-          United States <br />
-          <br />
 
-        </div>
       </div>
       <Loader type="pacman" />
     </>
