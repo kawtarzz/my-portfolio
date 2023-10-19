@@ -1,7 +1,6 @@
 KAWTAR AZZOUZI
 SOFTWARE DEVELOPER
 Nashville, Tennessee
-Phone: 312-213-5940 
 Email: Kawtaryazzouzi@Gmail.com   
 Github:  Kawtarzz     LinkedIn: Kawtara
 
