@@ -1,34 +1,29 @@
+
+
 export const projects = [
   {
     title: "cookiJar",
-    subtitle: "React & JSON Server",
+    subtitle: "React | Bootstrap/Reactstrap | Javascript | JSON Server | REST API | CSS | HTML",
     description:
       "cookiJar is a productivity tracking app that rewards users for completing tasks. cookiJar provides users structure by leveraging their motivational triggers and gamifying their tasks or ‘to-do’ lists!",
-    image: "./project-1.gif",
+    image: "https://onedrive.live.com/embed?resid=DEB0002FC4BFD90D%2143208&authkey=%21AC7xZNLuc_XzzhY",
     repolink: "https://github.com/kawtarzz/cooki-jar",
   },
+
   {
     title: "Shop the Block",
-    subtitle: "React, .Net Core, SQL",
+    subtitle: "React | Firebase | Javascript | Bootstrap/Reactstrap C# | .NET Core | SQL Server | CSS | HTML",
     description:
-      "Full-stack E-Commerce Site featuring local artists. Upon registration, users can shop or search by category, add items to their cart and continue browsing or checkout & receive an order confirmation.",
-    image: "./project-2.gif",
+      "Full-stack E-Commerce Site with user account priveleges. Upon registration, users can shop by category or search for items, add items to their cart and continue browsing or checkout & receive an order confirmation.",
+    image: "https://onedrive.live.com/embed?resid=DEB0002FC4BFD90D%2143209&authkey=%21AD3GNB7Cu18OdG4",
     repolink: "https://github.com/kawtarzz/shoptheblock",
   },
   {
-    title: "DevChat",
-    subtitle: "React and Firebase",
+    title: "Lotus Marketplace",
+    subtitle: "React | Typescript | Next.js | Shadcn | CSS | HTML",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Full-stack e-commerce marketplace with admin and user account priveleges. Upon registration, users can shop by category, by shop or search for items, add items to their cart. Admins can add, edit and delete items, shops and categories.",
     image: "./project-3.gif",
-    repolink: "https://jsbootcamp.com",
-  },
-  {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-4.gif",
-    repolink: "https://pythonbootcamp.com",
-  },
+    repolink: "https://github.com/kawtarzz/lotus-marketplace",
+  }
 ];
