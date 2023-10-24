@@ -7,10 +7,10 @@ import './index.scss'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const form = useRef()
+  const refForm = useRef()
 
   useEffect(() => {
-    return setTimeout(() => {
+    setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
   }, [])
@@ -19,14 +19,14 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
+      .sendForm('gmail', 'template_dy4yijj', refForm.current, 'oVuhuWy96mVwChvm2')
       .then(
         () => {
           alert('Message successfully sent!')
           window.location.reload(false)
         },
         () => {
-          alert('Failed to send the message, please try again')
+          alert('Failed to send the message, please try again or contact me at Kawtaryazzouzi@gmail.com')
         }
       )
   }
@@ -42,11 +42,16 @@ const Contact = () => {
               idx={15}
             />
           </h1>
-          <p>
-            I am seeking full-time opportunities for full-stack development at a company where I can grow and build upon these skills. I am also open to freelance work.
+          <p className='textarea'>
+            Have a project you'd like to discuss?
+            Or just want to say hi? Feel free to contact me using the form below or at
+            <a href="mailto:kawtaryazzouzi@gmail.com">
+              KawtaryAzzouzi@gmail.com
+            </a>
           </p>
+
           <div className="contact-form">
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={refForm} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input placeholder="Name" type="text" name="name" required />
@@ -69,7 +74,8 @@ const Contact = () => {
                 </li>
                 <li>
                   <textarea
-                    placeholder="Message"
+                    placeholder="Hi Kawtar, I'd like to talk about..."
+                    type="text"
                     name="message"
                     required
                   ></textarea>
@@ -81,16 +87,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="info-map">
-          Nashville,
-          <br />
-          Tennessee
-          <br />
-          37211 <br />
-          United States <br />
-          <br />
 
-        </div>
       </div>
       <Loader type="pacman" />
     </>

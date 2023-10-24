@@ -1,84 +1,53 @@
-import React, { useEffect, useState } from "react";
-import Loader from "react-loaders";
-import AnimatedLetters from "../AnimatedLetters";
-import "./index.scss";
+import React from "react";
+import { projects } from "./Projects/data.js"
+import "./index.scss"
 
+function Portfolio() {
+  return (
+    <div className="portfolio-page">
+      <section id="projects" className="text-gray-400 bg-gray-900 body-font">
+        <div className="container px-5 py-10 mx-auto text-center lg:px-40">
+          <h1 className="page-title">
+            Portfolio
+          </h1>
+        </div>
+        <div className="flex flex-wrap -m-4">
+          {projects.map((project) => (
+            <a
+              href={project.link}
+              key={project.image}
+              className="sm:w-1/2 w-100 p-4">
+              <div className="images-container">
+                <div className="image-box">
+                  <img
+                    alt="gallery"
+                    className="absolute inset-0 w-full h-full object-cover object-center"
+                    src={project.image}
+                  />
+                </div>
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h1 className="title-font text-lg font-medium text-white mb-3">
+                    {project.title}
+                  </h1>
+                  <hr></hr>
+                  <h4>{project.description}</h4>
+                  <div className="flex justify-center mt-4">
 
-const Portfolio = () => {
-  const [letterClass, setLetterClass] = useState('text-animate');
-  const [portfolio, setPortfolio] = useState([]);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLetterClass('text-animate-hover');
-    }, 3000);
-
-    return () => {
-      clearTimeout(timer);
-    }
-  });
-
-  useEffect(() => {
-    fetch('https://api.github.com/users/kawtarzz/repos')
-
-      .then((response) => response.json())
-      .then((data) => {
-        const portfolio = data.map((item) => {
-          return {
-            title: item.name,
-            description: item.description,
-            image: item.homepage,
-            url: item.html_url,
-          };
-        });
-        setPortfolio(portfolio);
-      });
-  }, []);
-
-
-  const renderPortfolio = () => {
-    return (
-      <div className="images-container">
-
-        {portfolio.map((item, index) => {
-          return (
-            <div className="image-container" key={index}>
-              <img src={item.image} alt="" />
-              <div className="overlay">
-                <div className="overlay-text">
-
-                  <a href={item.url}> <h3 className="overlay-text">{item.title}</h3> </a>
-                  <br></br>
-                  <br></br>
-                  <p>{item.description}</p>
+                    <h3 className="tracking-widest text-sm title-font font-medium text-green-500 mb-1">
+                      Tech:
+                    </h3>
+                    <h4>
+                      {project.subtitle}
+                    </h4>
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
-
-      </div>
-    );
-  }
-
-
-  return (
-    <>
-      <div className="container portfolio-page">
-        <div className="row">
-          <div className="col-12">
-            <div className="portfolio-title">
-              <br></br>
-              <span className={`${letterClass} _12`}>Portfolio</span>
-              {renderPortfolio()}
-            </div>
-          </div>
+            </a>
+          ))}
         </div>
-
-        <Loader type="pacman" />
-      </div>
-    </>
+      </section>
+    </div>
   );
-};
+}
 
 export default Portfolio;

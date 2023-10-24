@@ -1,12 +1,14 @@
 .page {
   width: 100%;
-  height: 100%;
-  position: absolute;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .top-tags {
   bottom: auto;
-  top: 35px;
+  top: 25px;
 }
 
 .tags {
@@ -15,7 +17,7 @@
   position: absolute;
   bottom: 0;
   left: 120px;
-  font-size: 18px;
+  font-size: 14px;
   font-family: 'La Belle Aurore', cursive;
 }
 
@@ -24,14 +26,13 @@
 }
 
 .container {
+  display: flex;
   width: 100%;
-  will-change: contents;
-  height: 90%;
-  min-height: 566px;
-  position: absolute;
+  min-height: 10rem;
   opacity: 0;
-  top: 5%;
-  margin: 0 auto;
+  margin: auto;
+  top: 60%;
+  transform: translateY(-50%);
   z-index: 1;
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
@@ -49,7 +50,7 @@
     font-weight: 400;
     margin-top: 0;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 0;
     left: -10px;
 
     &:before {
@@ -79,7 +80,7 @@
   }
 
   p {
-    font-size: 13px;
+    font-size: 14px;
     color: #fff;
     font-family: sans-serif;
     font-weight: 300;
@@ -102,12 +103,12 @@
   .text-zone {
     position: absolute;
     left: 10%;
-    top: 50%;
+    top: 100%;
     transform: translateY(-50%);
     width: 35%;
     vertical-align: middle;
     display: table-cell;
-    max-height: 90%;
+    max-height: 100%;
   }
 
   .text-animate-hover {
@@ -119,11 +120,14 @@
 
 @media screen and (max-width: 1200px) {
   .page {
-    position: initial;
+    position: relative;
+    z-index: -120vh;
+    display: block;
   }
 
   .container {
-    position: initial;
+    display: flex;
+    position: relative;
     height: auto;
     min-height: auto;
 
@@ -131,10 +135,7 @@
     &.about-page,
     &.portfolio-page {
       .text-zone {
-        position: initial;
-        transform: none;
         width: 100%;
-        display: block;
         padding: 20px;
         box-sizing: border-box;
       }
@@ -147,7 +148,7 @@
 
       h1.page-title {
         margin-left: 20px;
-        margin-top: 20px;
+        margin-top: 10px;
       }
 
       .image-box {

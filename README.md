@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+KAWTAR AZZOUZI
+SOFTWARE DEVELOPER
+Nashville, Tennessee
+Email: Kawtaryazzouzi@Gmail.com   
+Github:  Kawtarzz     LinkedIn: Kawtara
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tech Stack & Skills
+C# | .NET Stack  | HTML | CSS | Javascript | React.js | SQL  | Photoshop | Illustrator | AfterEffects 
 
-## Available Scripts
+ABOUT
+ Combining technical expertise with creative flair to create innovative solutions in web development and brand design. With an eye for detail and a deep understanding of design principles that inspire visually appealing identities and engaging digital experiences. 
+Outside of the world of design and development, you can often find Kawtar exploring the great outdoors, hiking with a trusty four-legged companion. This passion for adventure fuels Kawtar's drive to think outside the box and bring a fresh perspective to every project. 
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Technical Experience
+Full-Stack Developer, Nashville Software School
+Feb 2023 - Aug 2023
+Developed single-page applications (SPA) using React, focusing on modular coding practices.
+Planned databases with an emphasis on maintaining a flat data structure using ERDs.
+Styled applications using CSS, Bootstrap/Reactstrap.
+Created dynamic web applications with full CRUD functionality using vanilla JavaScript (ES6) and React.js.
+Utilized Git/GitHub for project management, issue tracking, version control, and remote collaboration.
+Client-side Capstone: GitHub:  [CookiJar Repository]
+Productivity tracking application. Users can create a task list and earn points for task completion. Points can be exchanged for pre-defined rewards.
+Server-side Capstone: GitHub: [ Shop the Block]
+Full-stack E-Commerce Site featuring local artists. Upon registration, users can shop or search by category, add items to their cart and continue browsing or checkout & receive an order confirmation.
+Professional Experience
+Freelance Graphic Designer / Illustrator
+June 2021 - Jan 2023
+Designed logos and developed visual brand identities.
+Created graphic assets to support existing brand guidelines.
+Developed e-commerce and commercial websites for small businesses using Shopify, WordPress, and Squarespace.
+Marketed and sold art prints of original work through e-commerce websites and art markets.
+Managed inventory and listings for wholesale art print sales via Faire and Fy marketplaces.
+Server, Audrey & June
+March 2023 - Present
+Maintained food and beverage knowledge, made recommendations, and provided wine pairings.
+Addressed and communicated guest allergies while ensuring a safe dining experience.
+Receptionist, Green Pea Salon
+Oct 2021 - Oct 2022
+Led transition in inventory management software & point of sale system, creating easier inventory tracking for the business and faster checkout for clients.
+Greeted clients, managed bookings, and handled all payments for services and retail.
+Art Director Intern, Rocket Mortgage
+Feb 2021 - Aug 2021
+Enhanced concept pitch decks with illustrative and graphic assets.
+Supported the photo/video department on set as a production assistant.
+Digital Marketing Manager, Lost Girls Vintage
+Nov 2019 - Feb 2021
+Built an e-commerce site for a vintage boutique, managing inventory and orders.
+Developed client relations and community outreach.
+Led social media marketing efforts and maintained the website.
+Education
+Nashville Software School Full-Stack Software Engineering Certificate
+Completed an intensive full-time 6-month software engineering program.
+Client-side development: HTML, CSS, JavaScript & building SPAs in React utilizing REST APIs.
+Server-side focused on writing object-oriented programs in C# on the .NET stack.
+Covered proper use of Git for source control & remote collaboration, building relational databases in SQL for data access, storage, and testing APIs with third-party services such as Postman & Swagger.
+School of the Art Institute of Chicago Bachelor of Fine Arts- Film, Video & Animation
+Covered film video and animation production and found a penchant for editing and post-production.
+Utilized Final Cut Pro, Premiere, and After Effects.
+Received Goldman Sachs Scholarship and Dean's List recognition.
+School of Motion - Motion Graphics & Animation
+ (Illustrate for motion, Character Rigging & Animation Bootcamp)
+Covered foundational to advanced animation techniques utilizing After Effects graph editor, character rigging with puppet tools & DUIK Bassel, and pre-production tools Photoshop & Illustrator for planning animation and properly setting art assets before passing to production.
