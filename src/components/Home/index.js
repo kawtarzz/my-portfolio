@@ -24,7 +24,7 @@ const Home = () => {
   return (
     <>
       <div className="container home-page">
-        <div>
+        <div className="text-zone">
           <h1>
             <span className={letterClass}>
               Hello! </span>

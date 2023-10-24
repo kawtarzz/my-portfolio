@@ -42,14 +42,19 @@ const Contact = () => {
               idx={15}
             />
           </h1>
-          <p className='textarea'>
-            Have a project you'd like to discuss?
-            Or just want to say hi? Feel free to contact me using the form below or at
+          <h3>
+            I'm currently available for freelance work and open to new opportunities.
+          </h3>
+          <p>
+            Have a project you'd like to discuss or a role you'd like to fill?
+            Or if you just want to say hello, I'd love to hear from you!
+            Feel free to contact me using the form below or at:
             <a href="mailto:kawtaryazzouzi@gmail.com">
-              KawtaryAzzouzi@gmail.com
+              <h4>
+                KawtaryAzzouzi@gmail.com
+              </h4>
             </a>
           </p>
-
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
               <ul>
