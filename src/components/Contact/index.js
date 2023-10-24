@@ -7,7 +7,7 @@ import './index.scss'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const form = useRef()
+  const refForm = useRef()
 
   useEffect(() => {
     setTimeout(() => {
@@ -18,9 +18,8 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault()
 
-    // add token for emailjs
     emailjs
-      .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
+      .sendForm('gmail', 'template_dy4yijj', refForm.current, 'oVuhuWy96mVwChvm2')
       .then(
         () => {
           alert('Message successfully sent!')
@@ -44,10 +43,15 @@ const Contact = () => {
             />
           </h1>
           <p className='textarea'>
+            Have a project you'd like to discuss?
+            Or just want to say hi? Feel free to contact me using the form below or at
+            <a href="mailto:kawtaryazzouzi@gmail.com">
+              KawtaryAzzouzi@gmail.com
+            </a>
           </p>
 
           <div className="contact-form">
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={refForm} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input placeholder="Name" type="text" name="name" required />
@@ -70,7 +74,7 @@ const Contact = () => {
                 </li>
                 <li>
                   <textarea
-                    placeholder="Message"
+                    placeholder="Hi Kawtar, I'd like to talk about..."
                     type="text"
                     name="message"
                     required
