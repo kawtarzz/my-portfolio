@@ -1,3 +1,5 @@
+// Layout all pages
+
 .page {
   width: 100%;
   height: auto;
@@ -26,29 +28,44 @@
 }
 
 .container {
-  display: flex;
-  width: 100%;
-  min-height: 10rem;
+  display: block;
+  width: auto;
+  height: auto;
   opacity: 0;
+  border: #ff1154 3px solid;
   margin: auto;
   top: 60%;
-  transform: translateY(-50%);
-  z-index: 1;
+  transform: translateY(-10%);
+  z-index: 0;
   transform-style: preserve-3d;
   animation: fadeIn 1s forwards;
   animation-delay: 1s;
+  margin-bottom: 5rem;
 }
 
+.header_img {
+  width: 80%;
+  max-width: 700px;
+  height: auto;
+  max-height: 100vh;
+}
+
+.contact-form {
+  width: auto;
+}
+
+.container.home-page,
 .container.contact-page,
 .container.about-page,
 .container.portfolio-page {
+
 
   h1 {
     font-size: 53px;
     font-family: 'Coolvetica';
     color: #ffd700;
     font-weight: 400;
-    margin-top: 0;
+    margin-top: 8rem;
     position: relative;
     margin-bottom: 0;
     left: -10px;
@@ -80,10 +97,10 @@
   }
 
   p {
-    font-size: 14px;
+    font-size: 15px;
     color: #fff;
     font-family: sans-serif;
-    font-weight: 300;
+    font-weight: 340;
     max-width: fit-content;
     animation: pulse 1s;
 
@@ -105,9 +122,10 @@
     left: 10%;
     top: 100%;
     transform: translateY(-50%);
-    width: 35%;
+    width: fit-content;
     vertical-align: middle;
     display: table-cell;
+    max-width: 60%;
     max-height: 100%;
   }
 
@@ -126,17 +144,17 @@
   }
 
   .container {
-    display: flex;
+    display: block;
     position: relative;
     height: auto;
-    min-height: auto;
 
     &.contact-page,
     &.about-page,
+    &.home-page,
     &.portfolio-page {
       .text-zone {
         width: 100%;
-        padding: 20px;
+        padding: 1rem;
         box-sizing: border-box;
       }
     }
@@ -144,7 +162,7 @@
     &.portfolio-page {
       width: 100%;
       padding: 20px;
-      box-sizing: border-box;
+      box-sizing: content-box;
 
       h1.page-title {
         margin-left: 20px;
@@ -161,7 +179,7 @@
   .stage-cube-cont {
     position: initial;
     width: 100%;
-    height: 0%;
+    height: auto;
     overflow: visible;
   }
 }
