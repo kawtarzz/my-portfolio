@@ -7,7 +7,8 @@ import './index.scss'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const refForm = useRef()
+  const refForm = useRef({ name: '', email: '', subject: '', message: '' });
+
 
   useEffect(() => {
     setTimeout(() => {
@@ -19,7 +20,7 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendForm('gmail', 'template_dy4yijj', refForm.current, 'oVuhuWy96mVwChvm2')
+      .send('service_ii6ih5p', 'template_fjl9j6l', refForm.current, 'oVuhuWy96mVwChvm2')
       .then(
         () => {
           alert('Message successfully sent!')
