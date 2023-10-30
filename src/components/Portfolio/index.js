@@ -21,20 +21,28 @@ function Portfolio() {
                 <Card.Img variant="top" className="header_img" src={project.image} to={project.link} />
                 <hr></hr>
                 <Card.Text>
-                  {project.description}
+                  <h4>
+                    {project.description}
+                  </h4>
+                  <hr />
+                  <h4>
+                    Problem:
+                  </h4>
+                  {project.problem} <br />
+                  <h4>
+                    Solution:
+                  </h4>
+                  {project.solution}
+                  <hr />
                   <Card.Subtitle>
                     <h4>
                       Tech:
                     </h4>
-                    <h5>
-                      {project.subtitle}
-                    </h5>
+                    {project.subtitle}
                     <p>
-
                       <Card.Link href={project.repolink}>Repo</Card.Link>
                     </p>
                   </Card.Subtitle>
-
                 </Card.Text>
               </Card.Body>
             </Card>
