@@ -7,8 +7,12 @@ import './index.scss'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const refForm = useRef({ name: '', email: '', subject: '', message: '' });
-
+  const [templateParams, setTemplateParams] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
 
   useEffect(() => {
     setTimeout(() => {
@@ -20,7 +24,7 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .send('service_ii6ih5p', 'template_fjl9j6l', refForm.current, 'oVuhuWy96mVwChvm2')
+      .send('service_ii6ih5p', 'template_fjl9j6l', templateParams, 'oVuhuWy96mVwChvm2')
       .then(
         () => {
           alert('Message successfully sent!')
@@ -31,6 +35,11 @@ const Contact = () => {
         }
       )
   }
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setTemplateParams({ ...templateParams, [name]: value });
+  };
 
   return (
     <>
@@ -57,16 +66,25 @@ const Contact = () => {
             </a>
           </p>
           <div className="contact-form">
-            <form ref={refForm} onSubmit={sendEmail}>
+            <form onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
+                  <input
+                    placeholder="Name"
+                    type="text"
+                    name="name"
+                    value={templateParams.name}
+                    onChange={handleInputChange}
+                    required
+                  />
                 </li>
                 <li className="half">
                   <input
                     placeholder="Email"
                     type="email"
                     name="email"
+                    value={templateParams.email}
+                    onChange={handleInputChange}
                     required
                   />
                 </li>
@@ -75,14 +93,17 @@ const Contact = () => {
                     placeholder="Subject"
                     type="text"
                     name="subject"
+                    value={templateParams.subject}
+                    onChange={handleInputChange}
                     required
                   />
                 </li>
                 <li>
                   <textarea
                     placeholder="Hi Kawtar, I'd like to talk about..."
-                    type="text"
                     name="message"
+                    value={templateParams.message}
+                    onChange={handleInputChange}
                     required
                   ></textarea>
                 </li>
