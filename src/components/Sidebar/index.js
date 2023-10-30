@@ -1,15 +1,11 @@
 import './index.scss'
-import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLinkedin,
   faGithub,
 } from '@fortawesome/free-brands-svg-icons'
 import Logo from '../../assets/logo.svg'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavbarBrand from 'react-bootstrap/NavbarBrand'
 import { NavLink } from 'react-router-dom'
 
 
@@ -22,9 +18,12 @@ const Sidebar = () => {
             src={Logo}
             className="logo"
             alt="Web Developer Kawtar Azzouzi Logo"
-
           />{' '}
         </Navbar.Brand>
+        <NavLink
+          className="portfolio-link"
+          to="/about"
+        >About</NavLink>
         <NavLink
           className="portfolio-link"
           to="/portfolio"

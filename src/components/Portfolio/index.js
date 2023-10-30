@@ -1,6 +1,8 @@
 import React from "react";
 import { projects } from "./Projects/data.js"
 import { Card } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 function Portfolio() {
   return (
@@ -40,7 +42,13 @@ function Portfolio() {
                     </h4>
                     {project.subtitle}
                     <p>
-                      <Card.Link href={project.repolink}>Repo</Card.Link>
+                      <Card.Link href={project.repolink} target="_blank"
+                        rel="noreferrer"> {' '}
+                        <FontAwesomeIcon
+                          icon={faGithub}
+                          color="#ffffff"
+                          className="anchor-icon"
+                        /></Card.Link>
                     </p>
                   </Card.Subtitle>
                 </Card.Text>
