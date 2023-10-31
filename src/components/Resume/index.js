@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import "./index.scss";
 
+
 const Resume = () => {
   const [loading, setLoading] = useState(true);
 
@@ -15,10 +16,9 @@ const Resume = () => {
     };
   });
 
-
   const renderResume = () => {
     return (
-      <iframe src="https://onedrive.live.com/embed?resid=DEB0002FC4BFD90D%2143201&authkey=!AHLcI45zBsqjOIM&em=2" width="90%" height="90%" frameborder="0" scrolling="no"></iframe>
+      <iframe src="https://onedrive.live.com/embed?resid=DEB0002FC4BFD90D%2143212&authkey=!APw-Lk3jB-f-YwM&em=" width="90%" height="90%" frameborder="0" scrolling="no"></iframe>
     );
   }
 
