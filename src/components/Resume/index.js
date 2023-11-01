@@ -18,7 +18,7 @@ const Resume = () => {
 
   const renderResume = () => {
     return (
-      <iframe src="https://onedrive.live.com/embed?resid=DEB0002FC4BFD90D%2143212&authkey=!APw-Lk3jB-f-YwM&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+      <iframe src="https://onedrive.live.com/embed?resid=DEB0002FC4BFD90D%2143212&authkey=!APw-Lk3jB-f-YwM&em=2" width="476" height="288" title="resume" frameborder="0" scrolling="no"></iframe>
     );
   }
 
