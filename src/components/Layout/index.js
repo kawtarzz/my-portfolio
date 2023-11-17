@@ -7,7 +7,6 @@ import { Container } from 'react-bootstrap';
 const Layout = () => {
   return <>
     <div className="App">
-
       <Sidebar />
       <Container fluid className="p-0">
         <Outlet />
