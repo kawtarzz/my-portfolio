@@ -18,7 +18,10 @@ const Resume = () => {
 
   const renderResume = () => {
     return (
-      <iframe style="border: 1px solid #777;" src="https://indd.adobe.com/embed/7117dedb-320f-44ff-93f2-fe519e08a6f4?startpage=1&allowFullscreen=true" width="525px" height="371px" frameborder="0" allowfullscreen=""></iframe>);
+
+      // eslint-disable-next-line jsx-a11y/iframe-has-title, react/style-prop-object
+      <iframe style="border: 1px solid #777;" src="https://indd.adobe.com/embed/7117dedb-320f-44ff-93f2-fe519e08a6f4?startpage=1&allowFullscreen=true" width="525px" height="371px" frameborder="0" allowfullscreen=""></iframe>
+    );
   }
 
   return (

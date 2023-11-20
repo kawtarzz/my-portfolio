@@ -3,11 +3,11 @@ html {
 }
 
 body {
-  background-color: #769aff;
+  background-color: #F7BE26;
   height: 100%;
   margin: 0;
-  font: 300 11px/1.4 'Helvetica Neue', sans-serif;
-  color: #010543;
+  font: 300 11px/1.4 'Golos Text', sans-serif;
+  color: #010538;
   list-style: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,7 +16,7 @@ body {
   justify-content: flex-start;
   margin-right: 0;
   padding-right: 0;
-  padding-bottom: 3rem;
+  padding-bottom: 0rem;
 }
 
 .dashboard {
