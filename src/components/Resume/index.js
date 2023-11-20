@@ -18,8 +18,7 @@ const Resume = () => {
 
   const renderResume = () => {
     return (
-      <iframe src="https://onedrive.live.com/embed?resid=DEB0002FC4BFD90D%2143212&authkey=!APw-Lk3jB-f-YwM&em=" width="90%" height="90%" frameborder="0" scrolling="no"></iframe>
-    );
+      <iframe style="border: 1px solid #777;" src="https://indd.adobe.com/embed/7117dedb-320f-44ff-93f2-fe519e08a6f4?startpage=1&allowFullscreen=true" width="525px" height="371px" frameborder="0" allowfullscreen=""></iframe>);
   }
 
   return (
