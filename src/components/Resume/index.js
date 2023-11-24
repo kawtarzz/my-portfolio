@@ -1,6 +1,4 @@
-import { Image } from 'react-bootstrap';
-import resumepg1 from './KAZZOUZI_1120_DEV_files/image001.png'
-import resumepg2 from './KAZZOUZI_1120_DEV_files/image002.png'
+
 import './KAZZOUZI_1120_DEV_files/image002.png'
 
 function Resume() {
