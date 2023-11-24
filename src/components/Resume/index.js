@@ -1,39 +1,21 @@
-import React, { useEffect, useState } from "react";
-import Loader from "react-loaders";
-import "./index.scss";
+import { Image } from 'react-bootstrap';
+import resumepg1 from './KAZZOUZI_1120_DEV_files/image001.png'
+import resumepg2 from './KAZZOUZI_1120_DEV_files/image002.png'
+import './KAZZOUZI_1120_DEV_files/image002.png'
 
-
-const Resume = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-
-    return () => {
-      clearTimeout(timer);
-    };
-  });
-
-  const renderResume = () => {
-    return (
-      <iframe src="https://onedrive.live.com/embed?resid=DEB0002FC4BFD90D%2143212&authkey=!APw-Lk3jB-f-YwM&em=2" width="476" height="288" title="resume" frameborder="0" scrolling="no"></iframe>
-    );
-  }
+function Resume() {
 
   return (
-    <div className="resume-container">
-      {loading ? (
-        <Loader type="ball-scale-multiple" active={loading} />
-      ) : (
-        renderResume()
-      )}
+    <div>
+      <>
+        <iframe src='https://indd.adobe.com/view/publication/7117dedb-320f-44ff-93f2-fe519e08a6f4/1/publication-web-resources/pdf/KAZZOUZI_1120_DEV.pdf' fluid
+          alt="full stack developer" title="kawtar azzouzi resume"
+          style={{ width: "100%", height: "100vh", backgroundColor: "white" }}
+        />
+      </>
+
     </div>
   );
-
-};
+}
 
 export default Resume;
-
-

@@ -14,7 +14,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Shop the Block",
+    title: "ShoptheBlock",
     subtitle: "React | Firebase | Javascript | Bootstrap/Reactstrap C# | .NET Core | SQL Server | CSS | HTML",
     description:
       "Full-stack E-Commerce Site with user account priveleges. Upon registration, users can shop by category or search for items, add items to their cart and continue browsing or checkout & receive an order confirmation.",
