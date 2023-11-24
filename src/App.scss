@@ -1,34 +1,69 @@
-$primary-color: #ffc800;
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem;
 
-@import 'animate.css';
-@import '~loaders.css/src/animations/pacman.scss';
+  @media screen and (max-width: 768px) {
+    width: 90%;
+    max-width: 100%;
 
-@font-face {
-  font-family: 'Helvetica Neue';
-  src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
+    .header_img {
+      width: 100%;
+      height: 100%;
+    }
 
-input,
-textarea {
-  font-family: 'Libre Baskerville', serif;
-}
+    &.portfolio-page,
+    &.home-page,
+    &.contact-page,
+    &.about-page {
+      .image-box {
+        height: 150px;
+        max-width: 100%;
+      }
 
-.loader-hidden {
-  display: none;
-}
+      .h1 {
+        font-size: 2.1rem;
+        font-family: 'Libre Baskerville', serif;
+        font-weight: 700;
+      }
 
-.loader-active {
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  width: 50px;
-  height: 50px;
-  animation: fadeOut 1s 1s;
-  animation-fill-mode: forwards;
+      ;
+
+      .h2 {
+        font-size: 1.8rem;
+        font-family: 'Libre Baskerville', serif;
+        font-weight: 700;
+      }
+
+      ;
+
+      .h3 {
+        font-size: 1.4rem;
+        font-family: 'Golos', sans-serif;
+        font-weight: 660;
+      }
+
+      ;
+
+      .h4 {
+        font-size: 1.2rem;
+        font-family: 'Golos', sans-serif;
+        font-weight: 600;
+      }
+
+      ;
+
+      .h5 {
+        font-size: 0.9rem;
+        font-family: 'Golos', sans-serif;
+      }
+
+      p {
+        font-size: 0.8rem;
+        font-family: 'Golos', sans-serif;
+
+      }
+
+    }
+  }
 }

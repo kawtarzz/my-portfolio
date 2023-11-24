@@ -1,24 +1,14 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
-import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import AnimatedLetters from '../AnimatedLetters'
-import './index.scss'
 
 const Contact = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
   const [templateParams, setTemplateParams] = useState({
     name: '',
     email: '',
     subject: '',
     message: '',
   });
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 3000)
-  }, [])
 
   const sendEmail = (e) => {
     e.preventDefault()
@@ -46,11 +36,7 @@ const Contact = () => {
       <div className="container contact-page">
         <div className="text-zone">
           <h1>
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
-              idx={15}
-            />
+            Contact
           </h1>
           <h3>
             I'm currently available for freelance work and open to new opportunities.

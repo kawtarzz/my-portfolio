@@ -18,15 +18,3 @@ body {
   padding-right: 0;
   padding-bottom: 0rem;
 }
-
-.dashboard {
-  margin-top: 3%;
-  margin-left: 3%;
-
-}
-
-@media screen and (max-width: 2000px) {
-  body {
-    overflow: visible;
-  }
-}
