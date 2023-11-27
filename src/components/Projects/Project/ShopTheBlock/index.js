@@ -1,52 +1,47 @@
 import React from 'react'
 import { projects } from '../../_data/data'
-import { Card, CardText, CardTitle, Container, CardImg, CardHeader, CardSubtitle } from 'reactstrap'
 import '../index.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 
 function ShopTheBlock() {
   const project = projects[1]
   return (
     <>
-      <div className="portfolio" fluid="true">
-        <div className="card">
-          <a href="/projects"><h3>
-            Back to Portfolio
+      <div className='container'>
+        <div className="projects" key={project.id}>
+          <img src={project.image} alt="" />
+          <h1 className="project-title">
+            {project.title}
+          </h1>
+          <h2 className="description">
+            {project.description}
+          </h2>
+          <hr />
+          <h2>Problem:</h2>
+          <p>
+            {project.problem}
+          </p>
+          <h2>Solution:</h2>
+          <p className="solution">
+            {project.solution}
+          </p>
+          <h2 className="tech-stack">
+            Tech Stack:
+          </h2>
+          <h3>
+            {project.subtitle}
           </h3>
-          </a>
-          <div className="col-xs-12 col-sm-8 col-lg-4">
-            <Card className="project" key={project.id}>
-              <CardHeader className="project-header">
-                <CardImg top style={{ width: '48rem' }} className="project-img" src={project.image} alt={project.title} />
-                <CardTitle tag="h2" className="title">{project.title}</CardTitle>
-              </CardHeader>
-              <CardText className="project-item">
-                <h4>
-                  {project.description}
-                </h4>
-                <hr />
-                <h4>Problem:</h4>
-                <br></br>
-                <h5>
-                  {project.problem}
-                </h5>
-                <h4>Solution:</h4>
-                <br></br>
-                <h5>
-                  {project.solution}
-                </h5>
-                <hr />
-                <CardSubtitle tag="h4" className="mb-2 text-muted">
-                  Tech Stack:
-                  <h5>
-                    {project.subtitle}
-                  </h5>
-                </CardSubtitle>
-                <hr />
-              </CardText>
-            </Card>
+          <hr></hr>
+          <div className="back-button">
+            <a href="/projects">
+              Back to Portfolio
+            </a>
+            <a href={project.repolink} target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithubSquare} /> View Code on Github
+            </a>
           </div>
         </div>
-
       </div>
     </>
   )

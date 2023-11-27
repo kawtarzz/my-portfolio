@@ -5,56 +5,60 @@ import {
   faGithub,
 } from '@fortawesome/free-brands-svg-icons'
 import Logo from '../../assets/logo.svg'
-import { NavLink } from 'react-router-dom'
-import { NavbarBrand } from 'react-bootstrap'
 
 
 const Sidebar = () => {
   return (<>
     <div className="nav-bar">
-      <NavbarBrand
-        className="nav-link"
-        href="/">
-        <img
-          src={Logo}
-          className="logo"
-          alt="Kawtar Azzouzi Logo"
-        />
-      </NavbarBrand>
-      <NavLink
-        className="nav-link"
-        to="/about"
-      >About</NavLink>
-      <NavLink
-        className="nav-link"
-        to="/projects"
-      >Projects</NavLink>
-      <NavLink
-        className="nav-link" to="/resume">Resume</NavLink>
-      <NavLink className="nav-link" to="/contact">Contact</NavLink>
+      <div className="nav-logo">
+        <a
+          href="/">
+          <img
+            src={Logo}
+            className="logo"
+            alt="Kawtar Azzouzi Logo"
+          />
+        </a>
+      </div>
+      <div className='nav-links'>
+        <a
+          className="nav-link"
+          href="/about"
+        >About</a>
+        <a
+          className="nav-link"
+          href="/projects"
+        >Projects</a>
+        <a
+          className="nav-link"
+          href="/resume">Resume</a>
+        <a
+          className="nav-link"
+          href="/contact">Contact</a>
+      </div>
 
-      <NavLink
-        className="nav-link"
-        to="https://www.linkedin.com/in/kawtara"
-        target="_blank"
-        rel="noreferrer">
-        <FontAwesomeIcon
-          icon={faLinkedin}
-          color="#ffffff"
-          className="anchor-icon"
-        />
-      </NavLink>
-      <NavLink
-        className="nav-link"
-        to="http://www.github.com/kawtarzz"
-        target="_blank"
-        rel="noreferrer">
-        <FontAwesomeIcon
-          icon={faGithub}
-          color="#ffffff"
-          className="anchor-icon"
-        />
-      </NavLink>
+      <div className="social-icons">
+        <a
+          href="https://www.linkedin.com/in/kawtar-azzouzi/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon
+            className="icon"
+            icon={faLinkedin}
+          />
+        </a>
+        <a
+          href="https://www.github.com/kawtarzz"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon
+            className="icon"
+            icon={faGithub}
+          />
+        </a>
+      </div>
     </div >
   </>
   )
