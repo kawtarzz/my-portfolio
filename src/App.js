@@ -10,17 +10,15 @@ import React from 'react'
 import CookiJar from './components/Projects/Project/CookiJar'
 import ShopTheBlock from './components/Projects/Project/ShopTheBlock'
 
-
 function App() {
 
   return (
     <>
       <Routes>
         <Route path="/" element={<Layout />} >
-          <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/" element={<Projects />} />
           <Route path="/projects/cookijar" element={<CookiJar />} />
           <Route path="/projects/shoptheblock" element={<ShopTheBlock />} />
           <Route path="/resume" element={<Resume />} />

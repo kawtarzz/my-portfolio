@@ -1,0 +1,17 @@
+.resume-page {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.resume-iframe {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}

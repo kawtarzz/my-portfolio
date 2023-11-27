@@ -1,56 +1,153 @@
-.project {
+.projects {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-direction: column;
   align-items: left;
-  height: 100%;
-  overflow: scroll;
-  margin-left: 5rem;
-  margin-right: 0;
-  margin-bottom: 3%;
+  padding-left: 1rem;
+  width: 90%;
+  height: 90%;
 
-  .project-header {
+  .text-area {
     display: flex;
-    flex-wrap: wrap;
-    padding: 0rem;
-
-    .title {
-      font-size: 30px;
-      font-weight: bold;
-      margin-top: 2rem;
-      width: 100%;
-      margin-bottom: 1rem;
-      text-align: left;
-    }
-  }
-
-  .project-item {
-    width: 100%;
-    height: auto;
-    padding: .5rem;
-    font-size: 16px;
-    margin-left: 20rem;
-    margin-right: 20rem;
-    margin-bottom: 5rem;
-
-    h2,
-    h3,
-    h4 {
-      font-size: medium;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
-  }
-
-  .project-img {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
+    flex-direction: column;
     align-items: left;
+    width: 67%;
+    height: 100%;
+  }
+
+  .project-title {
+    font-size: 3.3rem;
+    font-weight: 800;
+    margin-top: 2rem;
+    line-height: 4rem;
+  }
+
+  .back-button {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+
+    a {
+      text-decoration: none;
+      color: rgb(21, 8, 169);
+      padding: 1rem 1rem;
+    }
+
+    a:hover {
+      color: rgb(232, 70, 0);
+      text-decoration: underline;
+
+    }
+  }
+
+  img {
+    width: 55%;
+    object-fit: cover;
+    border-radius: 0.6rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 720;
+    color: rgb(7, 0, 87);
+    text-decoration: none;
+    margin: 1rem 0rem;
+    line-height: 3rem;
+  }
+
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    color: rgb(218, 51, 0);
+    text-decoration: none;
+    margin-left: -1rem;
+    margin-bottom: 0.4rem;
   }
 
   .description {
-    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+    letter-spacing: normal;
+    color: rgb(206, 44, 3);
+    text-decoration: none;
+  }
+
+  .tech-stack {
+    color: rgb(7, 0, 87);
+    line-height: 1rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgb(206, 44, 3);
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin: 1rem 0rem;
+    text-transform: capitalize;
+
+  }
+
+  p {
+    margin-top: 0;
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 2.3rem;
+    color: rgb(20, 14, 72);
+    text-decoration: none;
+  }
+
+  div {
+    line-height: 2rem;
+    color: rgb(20, 14, 72);
+    text-decoration: none;
+  }
+
+  .solution {
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 2.6rem;
+    color: rgb(20, 14, 72);
+    text-decoration: none;
+  }
+
+  hr {
+    border: 1px solid rgb(20, 14, 72);
+    margin: 1rem 0rem;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0rem 1rem;
+
+    .detail-button {
+      font-size: 1.5rem;
+      font-style: normal;
+      font-family: 'roboto', sans-serif;
+      font-weight: 500;
+      text-decoration: none;
+
+      &:hover {
+        box-sizing: border-box;
+        color: red;
+      }
+    }
+
+    .icon {
+      font-size: 2.5rem;
+      text-decoration: none;
+      padding: 0rem 3rem;
+      position: relative;
+
+      &:hover {
+        color: red;
+
+      }
+    }
   }
 }

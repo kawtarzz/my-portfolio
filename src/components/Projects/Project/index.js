@@ -1,30 +1,45 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom"
 import { useLocation } from 'react-router-dom'
-import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle } from "reactstrap"
-import './index.scss'
+import './index.scss';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 
-export default function Project({ project }) {
+
+export default function Project({ project, id }) {
   const navigate = useNavigate();
   const location = useLocation();
 
   const handleClick = () => {
-    const path = location.pathname;
-    const newPath = path + "/" + project.title;
-    navigate(newPath);
+    navigate(`/projects/${project.title}`, { state: { background: location } })
   }
 
   return (
-    <Card className="m-4" key={project.id}>
-      <CardImg top width="43%" src={project.image} alt={project.title}
-        onClick={handleClick} />
-      <CardBody>
-        <CardTitle tag="h2">{project.title}</CardTitle>
-        <CardSubtitle tag="h4" className="mb-2 text-muted">{project.subtitle}</CardSubtitle>
-
-        <CardText>{project.description}</CardText>
-      </CardBody>
-
-    </Card>
+    <div className="container">
+      <div className="projects">
+        <img top src={project.image} alt={project.title}
+          onClick={handleClick} />
+        <h1 className="project-title">
+          {project.title}
+        </h1>
+        <div className="text-area">
+          <p>
+            {project.description}
+          </p>
+          <h3>
+            {project.subtitle}
+          </h3>
+          <hr></hr>
+        </div>
+        <div className="back-button">
+          <a href={`/projects/${project.title}`} onClick={handleClick}>
+            Project Details
+          </a> |
+          <a href={project.repolink} target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithubSquare} /> View Code on Github
+          </a>
+        </div>
+      </div>
+    </div>
   )
 }
