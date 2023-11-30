@@ -1,17 +1,19 @@
 html {
   font-size: 70.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #F7BE26;
-  height: 100%;
+  height: auto;
   margin: 0;
   font: 300 11px/1.4 'Golos Text', sans-serif;
   color: #010538;
   list-style: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
+  overflow: auto;
+  overflow-x: hidden;
   display: block;
   justify-content: flex-start;
   margin-right: 0;
