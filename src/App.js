@@ -9,6 +9,8 @@ import './App.scss'
 import React from 'react'
 import CookiJar from './components/Projects/Project/CookiJar'
 import ShopTheBlock from './components/Projects/Project/ShopTheBlock'
+import SpiritualTeens from './components/Projects/Project/SpiritualTeens'
+import PetalPushr from './components/Projects/Project/PetalPushr'
 
 function App() {
 
@@ -21,6 +23,9 @@ function App() {
           <Route path="/projects/" element={<Projects />} />
           <Route path="/projects/cookijar" element={<CookiJar />} />
           <Route path="/projects/shoptheblock" element={<ShopTheBlock />} />
+          <Route path="/projects/spiritualteens" element={<SpiritualTeens />} />
+          <Route path="/projects/petalpushr" element={<PetalPushr />} />
+
           <Route path="/resume" element={<Resume />} />
         </Route>
       </Routes>
