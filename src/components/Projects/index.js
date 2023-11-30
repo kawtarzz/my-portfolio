@@ -2,6 +2,7 @@ import React from "react";
 import Project from "./Project";
 import { projects } from './_data/data';
 
+
 function Projects() {
   return (
     <>
