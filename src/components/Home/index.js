@@ -23,6 +23,7 @@ const Home = () => {
             Blending creativity & technology to build intuitive, user-centric applications that look good and make sense.
           </h1>
         </div>
+        <br></br>
         <div className="button-container">
           <Link className="flat-button" to={path} onClick={handleClick}>
             _portfolio
