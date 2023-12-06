@@ -33,6 +33,12 @@ function ShopTheBlock() {
             {project.subtitle}
           </h3>
           <hr></hr>
+          <h2 className="demo">
+            Demo:
+          </h2>
+          <iframe src="https://1drv.ms/v/s!Ag3Zv8QvALDegtFlQu6ryh9S5b1S4A?e=URVwxn" width="320" height="320" frameborder="0" title="shoptheblock-demo" allowfullscreen></iframe>
+          <hr></hr>
+
           <div className="back-button">
             <a href="/projects">
               Back to Portfolio
