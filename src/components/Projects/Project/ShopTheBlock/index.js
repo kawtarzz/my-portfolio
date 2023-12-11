@@ -46,6 +46,9 @@ function ShopTheBlock() {
             <a href={project.repolink} target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithubSquare} /> View Code on Github
             </a>
+            <a href={project.demo} target="_blank" rel="noopener noreferrer">
+              View Live Demo
+            </a>
           </div>
         </div>
       </div>
