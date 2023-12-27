@@ -7,8 +7,9 @@ import Home from '../Home';
 
 const Layout = () => {
 
+
   return <>
-    <div className="App">
+    <div className="App section">
       <Sidebar />
       <Container fluid className="p-0">
         <Home />

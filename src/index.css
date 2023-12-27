@@ -3,12 +3,24 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --body_background: #F7BE26;
+  --body_color: black;
+  --link_color: navy;
+}
+
+[data-theme='dark'] {
+  --body_background: #010538;
+  --body_color: #ffffff;
+  --link_color: #F7BE26;
+}
+
 body {
-  background-color: #F7BE26;
+  background-color: var(--body_background);
   height: auto;
   margin: 0;
   font: 300 11px/1.4 'Golos Text', sans-serif;
-  color: #010538;
+  color: var(--body_color);
   list-style: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,3 +32,5 @@ body {
   padding-right: 0;
   padding-bottom: 0rem;
 }
+
+/* #F7BE26; */

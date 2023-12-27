@@ -22,6 +22,8 @@ function App() {
           <Route path="/projects/" element={<Projects />} />
           <Route path="/projects/cookijar" element={<CookiJar />} />
           <Route path="/projects/shoptheblock" element={<ShopTheBlock />} />
+
+          {/* toggle on show design/illustration projects */}
           <Route path="/projects/spiritualteens" element={<SpiritualTeens />} />
           <Route path="/projects/petalpushr" element={<PetalPushr />} />
 

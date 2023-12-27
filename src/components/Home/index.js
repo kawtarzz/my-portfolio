@@ -1,11 +1,10 @@
 
 import { Link } from "react-router-dom";
 import './index.scss'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 
 const Home = () => {
   const [path, setPath] = useState("/")
-
   const handleClick = () => {
     if (path === "/") {
       setPath("/projects")
@@ -17,10 +16,11 @@ const Home = () => {
   return (
     <>
       <div className="container">
+
         <div className="home-page">
           <h1 className="header h1">
             Full-stack developer with a background in visual design.
-            Blending creativity & technology to build intuitive, user-centric applications that look good and make sense.
+            Blending creativity & technology to build intuitive, user-centric full stack applications and websites.
           </h1>
         </div>
         <br></br>
