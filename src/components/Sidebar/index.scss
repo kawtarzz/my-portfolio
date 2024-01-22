@@ -13,7 +13,7 @@
     transition: all 0.2s ease-out;
 
     @media (max-width: 76px) {
-      margin-right: .5rem;
+      margin-right: 0.5rem;
       margin-left: 3rem;
       min-width: unset;
     }
@@ -23,38 +23,42 @@
     width: 16rem;
 
     @media (max-width: 76px) {
-      margin-right: .5rem;
+      margin-right: 0.5rem;
       margin-left: 3rem;
       min-width: unset;
     }
   }
 
   .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
     list-style: none;
-
+    margin-left: auto;
+    padding: 0;
 
     @media (max-width: 76px) {
       display: none;
     }
-  }
 
-  .nav-link {
-    font-size: 1.6rem;
-    font-weight: 500;
-    float: right;
-    text-decoration: none;
-    color: var(--link_color);
-    padding: 0rem .5rem;
-  }
+    .nav-link {
+      font-size: 1.6rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: var(--link_color);
+      padding: 0rem 0.5rem;
+    }
 
-  .nav-link:hover {
-    color: rgb(232, 70, 0);
+    .nav-link:hover {
+      color: rgb(232, 70, 0);
+    }
   }
 
   .social-icons {
     float: right;
     text-align: center;
-    padding: 0rem .5rem;
+    padding: 0rem 0.5rem;
     text-decoration: none;
 
     i {
