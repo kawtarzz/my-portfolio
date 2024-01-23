@@ -20,6 +20,7 @@ function Resume() {
           alt="full stack developer"
           title="kawtar azzouzi resume"
           width="800px"
+          height="800px"
           frameborder="0"
           allowfullscreen=""
         ></iframe>
